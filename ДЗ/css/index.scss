@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto"
+}
+a{
+    font-family: "Roboto"
+}
+.big_box{
+    width: 100%;
+    height: 615px;
+    background-image: url(../img/йцук.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 112px + 471px + 457px;
+        height: 100%;
+        position: relative;
+        .head{
+            height: 98px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .burger_menu{
+                display: none;
+                width: 56px;
+                height: 32px;
+                position: relative;
+                .one{
+                    width: 100%;
+                    height: 7px;
+                    position: absolute;
+                    background-color: #007A5C;
+                    border-radius: 8px;
+                    top: 0;
+                    transition: 0.5s;
+                }
+                .two{
+                    width: 100%;
+                    height: 7px;
+                    background-color: black;
+                    border-radius: 8px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    transition: 0.5s;
+                }
+                .three{
+                    width: 100%;
+                    background-color: black;
+                    border-radius: 8px;
+                    height: 7px;
+                    position: absolute;
+                    bottom: 0;
+                    transition: 0.5s;
+                }
+            }
+            .op1 {
+                transition: 0.5s;
+                top: 0%;
+                transform: translateY(180%) rotate(45deg);
+              }
+            .op2{
+                opacity: 0;
+            }
+            .op3 {
+                transition: 0.5s;
+                bottom: 0%;
+                transform: translateY(-180%) rotate(-45deg);
+            }
+            .icon{
+                width: 112px;
+                height: 50px;
+                display: block;
+                background-image: url(../img/Group.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: 0.3s;
+                &:hover{
+                    margin-top: -10px;
+                }
+            }
+            .ss{
+                height: 100%;
+                width: 92px + 48px + 61px + 48px + 47px;
+                display: flex;
+                align-items: center;
+                a{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #023135;
+                    transition: 0.3s;
+                    &:hover{
+                        color: #007A5C;
+                    }
+                }
+                .text_a{
+                    margin: 0 48px;
+                }
+            }
+        }
+        .box{
+            width: 100%;
+            height: 300px;
+            z-index: 1000000000000;
+            background-image: url(../img/йцук.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            top: -100%;
+            transition: 0.5s;
+            .gray{
+                color: #007A5C;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        .key{
+            top: 97px;
+            transition: 0.5s;
+        }
+        main{
+            width: 100%;
+            height: 615px - 98px; 
+            display: flex;
+            justify-content: space-between;
+            .text_box{
+                width: 531px + 52px;
+                padding-top: 37px;
+                .text_h1{
+                    font-size: 50px;
+                    font-weight: 400;
+                    margin-bottom: 21px;
+                    color: #32404D;
+                }
+                .grey{
+                    color: #023135;
+                }
+                .btn{
+                    border: none;
+                    margin-top: 60px;
+                    color: white;
+                    background-color: #007A5C;
+                    width: 200px;
+                    height: 60px;
+                    border-radius: 30px;
+                    transition: 0.3s;
+                    &:hover{
+                        width: 180px;
+                        height: 50px;
+                        background-color: transparent;
+                        border: 2px solid #007A5C;
+                        color: #007A5C;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .image_box{
+                position: relative;
+                .gg1{
+                    width: 40%;
+                    height: 100px;
+                    position: absolute;
+                    bottom: 22%;
+                    left: 11%;
+                    border: none;
+                    z-index: 100000000000;
+                }
+                .gg{
+                    width: 40%;
+                    height: 100px;
+                    position: absolute;
+                    top: 5%;
+                    left: 31%;
+                    transform: translate(-50%);
+                    border: none;
+                    z-index: 100000000000;
+                }
+                .image{
+                    width: 457px;
+                    position: relative;
+                    z-index: 10;
+                }
+                .white_block{
+                    width: 42%;
+                    height: 78%;
+                    position: absolute;
+                    background-color: white;
+                    top: 2%;
+                    left: 31%;
+                    transform: translateX(-50%);
+                }
+                .vd{
+                    height: 394px;
+                    width: 196px;
+                    overflow: hidden;
+                    position: absolute;
+                    left: 45px;
+                    top: 14px;
+                    .videop{
+                        height: 394px;
+                        width: 196px;
+                        position: absolute;
+                        display: block;
+                        transition: 0.5s;
+                        .video{
+                            height: 100%;
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

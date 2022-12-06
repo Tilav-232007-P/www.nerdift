@@ -1,0 +1,232 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  font-family: "Roboto";
+}
+
+.big_box {
+  width: 100%;
+  height: 615px;
+  background-image: url(../img/йцук.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.big_box .container {
+  width: 1040px;
+  height: 100%;
+  position: relative;
+}
+.big_box .container .head {
+  height: 98px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.big_box .container .head .burger_menu {
+  display: none;
+  width: 56px;
+  height: 32px;
+  position: relative;
+}
+.big_box .container .head .burger_menu .one {
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  background-color: #007A5C;
+  border-radius: 8px;
+  top: 0;
+  transition: 0.5s;
+}
+.big_box .container .head .burger_menu .two {
+  width: 100%;
+  height: 7px;
+  background-color: black;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.big_box .container .head .burger_menu .three {
+  width: 100%;
+  background-color: black;
+  border-radius: 8px;
+  height: 7px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s;
+}
+.big_box .container .head .op1 {
+  transition: 0.5s;
+  top: 0%;
+  transform: translateY(180%) rotate(45deg);
+}
+.big_box .container .head .op2 {
+  opacity: 0;
+}
+.big_box .container .head .op3 {
+  transition: 0.5s;
+  bottom: 0%;
+  transform: translateY(-180%) rotate(-45deg);
+}
+.big_box .container .head .icon {
+  width: 112px;
+  height: 50px;
+  display: block;
+  background-image: url(../img/Group.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+}
+.big_box .container .head .icon:hover {
+  margin-top: -10px;
+}
+.big_box .container .head .ss {
+  height: 100%;
+  width: 296px;
+  display: flex;
+  align-items: center;
+}
+.big_box .container .head .ss a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #023135;
+  transition: 0.3s;
+}
+.big_box .container .head .ss a:hover {
+  color: #007A5C;
+}
+.big_box .container .head .ss .text_a {
+  margin: 0 48px;
+}
+.big_box .container .box {
+  width: 100%;
+  height: 300px;
+  z-index: 1000000000000;
+  background-image: url(../img/йцук.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  top: -100%;
+  transition: 0.5s;
+}
+.big_box .container .box .gray {
+  color: #007A5C;
+  font-size: 18px;
+  font-weight: 600;
+}
+.big_box .container .key {
+  top: 97px;
+  transition: 0.5s;
+}
+.big_box .container main {
+  width: 100%;
+  height: 517px;
+  display: flex;
+  justify-content: space-between;
+}
+.big_box .container main .text_box {
+  width: 583px;
+  padding-top: 37px;
+}
+.big_box .container main .text_box .text_h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 21px;
+  color: #32404D;
+}
+.big_box .container main .text_box .grey {
+  color: #023135;
+}
+.big_box .container main .text_box .btn {
+  border: none;
+  margin-top: 60px;
+  color: white;
+  background-color: #007A5C;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.big_box .container main .text_box .btn:hover {
+  width: 180px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #007A5C;
+  color: #007A5C;
+  font-weight: 600;
+}
+.big_box .container main .image_box {
+  position: relative;
+}
+.big_box .container main .image_box .gg1 {
+  width: 40%;
+  height: 100px;
+  position: absolute;
+  bottom: 22%;
+  left: 11%;
+  border: none;
+  z-index: 100000000000;
+}
+.big_box .container main .image_box .gg {
+  width: 40%;
+  height: 100px;
+  position: absolute;
+  top: 5%;
+  left: 31%;
+  transform: translate(-50%);
+  border: none;
+  z-index: 100000000000;
+}
+.big_box .container main .image_box .image {
+  width: 457px;
+  position: relative;
+  z-index: 10;
+}
+.big_box .container main .image_box .white_block {
+  width: 42%;
+  height: 78%;
+  position: absolute;
+  background-color: white;
+  top: 2%;
+  left: 31%;
+  transform: translateX(-50%);
+}
+.big_box .container main .image_box .vd {
+  height: 394px;
+  width: 196px;
+  overflow: hidden;
+  position: absolute;
+  left: 45px;
+  top: 14px;
+}
+.big_box .container main .image_box .vd .videop {
+  height: 394px;
+  width: 196px;
+  position: absolute;
+  display: block;
+  transition: 0.5s;
+}
+.big_box .container main .image_box .vd .videop .video {
+  height: 100%;
+  width: 100%;
+  display: block;
+}/*# sourceMappingURL=index.css.map */
